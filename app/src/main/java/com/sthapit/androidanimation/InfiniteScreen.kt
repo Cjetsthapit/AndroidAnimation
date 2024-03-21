@@ -29,7 +29,7 @@ fun InfiniteScreen(navController: NavController) {
         targetValue = 1.2f,
         animationSpec = infiniteRepeatable(
             // Tween animation for smooth scaling
-            animation = tween(durationMillis = 30000, easing = LinearEasing),
+            animation = tween(durationMillis = 1000, easing = LinearEasing),
             // Repeat the animation forever with reverse at the end
             repeatMode = RepeatMode.Reverse
         ), label = ""

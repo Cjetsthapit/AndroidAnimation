@@ -43,11 +43,9 @@ fun TransitionScreen(navController: NavController) {
             painter = painterResource(id = R.drawable.rocket),
             contentDescription = "Example Image",
             modifier = Modifier
-//                .align(Alignment.Bottom)
                 .offset(y = animatedYPosition.value)
         )
     }
-
 
 }
 

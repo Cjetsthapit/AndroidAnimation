@@ -11,7 +11,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
@@ -22,7 +21,7 @@ fun ScaleScreen(navController: NavController) {
 
     var clicked by remember { mutableStateOf(false) }
 
-    val scale by animateFloatAsState(targetValue = if (clicked) 2f else 1f)
+    val scale by animateFloatAsState(targetValue = if (clicked) 2f else 1f, label = "")
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
